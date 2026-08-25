@@ -1,5 +1,5 @@
 Analysis & Synthesis report for rc4
-Tue Aug 25 01:20:22 2026
+Tue Aug 25 01:37:58 2026
 Quartus Prime Version 16.1.2 Build 203 01/18/2017 SJ Lite Edition
 
 
@@ -95,7 +95,7 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Aug 25 01:20:22 2026       ;
+; Analysis & Synthesis Status     ; Successful - Tue Aug 25 01:37:58 2026       ;
 ; Quartus Prime Version           ; 16.1.2 Build 203 01/18/2017 SJ Lite Edition ;
 ; Revision Name                   ; rc4                                         ;
 ; Top-level Entity Name           ; ksa                                         ;
@@ -293,14 +293,14 @@ agreement for further details.
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimate of Logic utilization (ALMs needed) ; 1318           ;
+; Estimate of Logic utilization (ALMs needed) ; 1317           ;
 ;                                             ;                ;
-; Combinational ALUT usage for logic          ; 1799           ;
-;     -- 7 input functions                    ; 28             ;
-;     -- 6 input functions                    ; 368            ;
-;     -- 5 input functions                    ; 401            ;
-;     -- 4 input functions                    ; 272            ;
-;     -- <=3 input functions                  ; 730            ;
+; Combinational ALUT usage for logic          ; 1813           ;
+;     -- 7 input functions                    ; 20             ;
+;     -- 6 input functions                    ; 360            ;
+;     -- 5 input functions                    ; 417            ;
+;     -- 4 input functions                    ; 292            ;
+;     -- <=3 input functions                  ; 724            ;
 ;                                             ;                ;
 ; Dedicated logic registers                   ; 1690           ;
 ;                                             ;                ;
@@ -312,7 +312,7 @@ agreement for further details.
 ;                                             ;                ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
 ; Maximum fan-out                             ; 1092           ;
-; Total fan-out                               ; 15968          ;
+; Total fan-out                               ; 15998          ;
 ; Average fan-out                             ; 4.28           ;
 +---------------------------------------------+----------------+
 
@@ -322,7 +322,7 @@ agreement for further details.
 +-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
 ; Compilation Hierarchy Node                                                                                                              ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                                                                                                                                             ; Entity Name                       ; Library Name ;
 +-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
-; |ksa                                                                                                                                    ; 1799 (28)           ; 1690 (0)                  ; 10240             ; 0          ; 67   ; 0            ; |ksa                                                                                                                                                                                                                                                                                                                                            ; ksa                               ; work         ;
+; |ksa                                                                                                                                    ; 1813 (28)           ; 1690 (0)                  ; 10240             ; 0          ; 67   ; 0            ; |ksa                                                                                                                                                                                                                                                                                                                                            ; ksa                               ; work         ;
 ;    |RAM_Decrypt:U52|                                                                                                                    ; 37 (0)              ; 32 (0)                    ; 256               ; 0          ; 0    ; 0            ; |ksa|RAM_Decrypt:U52                                                                                                                                                                                                                                                                                                                            ; RAM_Decrypt                       ; work         ;
 ;       |altsyncram:altsyncram_component|                                                                                                 ; 37 (0)              ; 32 (0)                    ; 256               ; 0          ; 0    ; 0            ; |ksa|RAM_Decrypt:U52|altsyncram:altsyncram_component                                                                                                                                                                                                                                                                                            ; altsyncram                        ; work         ;
 ;          |altsyncram_obb4:auto_generated|                                                                                               ; 37 (0)              ; 32 (0)                    ; 256               ; 0          ; 0    ; 0            ; |ksa|RAM_Decrypt:U52|altsyncram:altsyncram_component|altsyncram_obb4:auto_generated                                                                                                                                                                                                                                                             ; altsyncram_obb4                   ; work         ;
@@ -387,7 +387,7 @@ agreement for further details.
 ;    |decrypter:U6|                                                                                                                       ; 106 (106)           ; 128 (128)                 ; 0                 ; 0          ; 0    ; 0            ; |ksa|decrypter:U6                                                                                                                                                                                                                                                                                                                               ; decrypter                         ; work         ;
 ;    |increment_key:U72|                                                                                                                  ; 30 (30)             ; 23 (23)                   ; 0                 ; 0          ; 0    ; 0            ; |ksa|increment_key:U72                                                                                                                                                                                                                                                                                                                          ; increment_key                     ; work         ;
 ;    |increment_key:U73|                                                                                                                  ; 30 (30)             ; 23 (23)                   ; 0                 ; 0          ; 0    ; 0            ; |ksa|increment_key:U73                                                                                                                                                                                                                                                                                                                          ; increment_key                     ; work         ;
-;    |increment_key:U74|                                                                                                                  ; 28 (28)             ; 23 (23)                   ; 0                 ; 0          ; 0    ; 0            ; |ksa|increment_key:U74                                                                                                                                                                                                                                                                                                                          ; increment_key                     ; work         ;
+;    |increment_key:U74|                                                                                                                  ; 30 (30)             ; 23 (23)                   ; 0                 ; 0          ; 0    ; 0            ; |ksa|increment_key:U74                                                                                                                                                                                                                                                                                                                          ; increment_key                     ; work         ;
 ;    |increment_key:U7|                                                                                                                   ; 28 (28)             ; 23 (23)                   ; 0                 ; 0          ; 0    ; 0            ; |ksa|increment_key:U7                                                                                                                                                                                                                                                                                                                           ; increment_key                     ; work         ;
 ;    |init_s_mem:U12|                                                                                                                     ; 17 (17)             ; 20 (20)                   ; 0                 ; 0          ; 0    ; 0            ; |ksa|init_s_mem:U12                                                                                                                                                                                                                                                                                                                             ; init_s_mem                        ; work         ;
 ;    |init_s_mem:U13|                                                                                                                     ; 17 (17)             ; 20 (20)                   ; 0                 ; 0          ; 0    ; 0            ; |ksa|init_s_mem:U13                                                                                                                                                                                                                                                                                                                             ; init_s_mem                        ; work         ;
@@ -417,26 +417,26 @@ agreement for further details.
 ;             |altsyncram_kq83:altsyncram1|                                                                                               ; 0 (0)               ; 0 (0)                     ; 2048              ; 0          ; 0    ; 0            ; |ksa|s_memory:U0|altsyncram:altsyncram_component|altsyncram_m5b4:auto_generated|altsyncram_kq83:altsyncram1                                                                                                                                                                                                                                     ; altsyncram_kq83                   ; work         ;
 ;             |sld_mod_ram_rom:mgl_prim2|                                                                                                 ; 41 (23)             ; 37 (28)                   ; 0                 ; 0          ; 0    ; 0            ; |ksa|s_memory:U0|altsyncram:altsyncram_component|altsyncram_m5b4:auto_generated|sld_mod_ram_rom:mgl_prim2                                                                                                                                                                                                                                       ; sld_mod_ram_rom                   ; work         ;
 ;                |sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|                                                                     ; 18 (18)             ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |ksa|s_memory:U0|altsyncram:altsyncram_component|altsyncram_m5b4:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr                                                                                                                                                                                    ; sld_rom_sr                        ; work         ;
-;    |shuffle_mem:U22|                                                                                                                    ; 91 (52)             ; 78 (78)                   ; 0                 ; 0          ; 0    ; 0            ; |ksa|shuffle_mem:U22                                                                                                                                                                                                                                                                                                                            ; shuffle_mem                       ; work         ;
-;       |lpm_divide:Mod0|                                                                                                                 ; 39 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ksa|shuffle_mem:U22|lpm_divide:Mod0                                                                                                                                                                                                                                                                                                            ; lpm_divide                        ; work         ;
-;          |lpm_divide_62m:auto_generated|                                                                                                ; 39 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ksa|shuffle_mem:U22|lpm_divide:Mod0|lpm_divide_62m:auto_generated                                                                                                                                                                                                                                                                              ; lpm_divide_62m                    ; work         ;
-;             |sign_div_unsign_9kh:divider|                                                                                               ; 39 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ksa|shuffle_mem:U22|lpm_divide:Mod0|lpm_divide_62m:auto_generated|sign_div_unsign_9kh:divider                                                                                                                                                                                                                                                  ; sign_div_unsign_9kh               ; work         ;
-;                |alt_u_div_ose:divider|                                                                                                  ; 39 (39)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ksa|shuffle_mem:U22|lpm_divide:Mod0|lpm_divide_62m:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_ose:divider                                                                                                                                                                                                                            ; alt_u_div_ose                     ; work         ;
-;    |shuffle_mem:U23|                                                                                                                    ; 91 (52)             ; 78 (78)                   ; 0                 ; 0          ; 0    ; 0            ; |ksa|shuffle_mem:U23                                                                                                                                                                                                                                                                                                                            ; shuffle_mem                       ; work         ;
-;       |lpm_divide:Mod0|                                                                                                                 ; 39 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ksa|shuffle_mem:U23|lpm_divide:Mod0                                                                                                                                                                                                                                                                                                            ; lpm_divide                        ; work         ;
-;          |lpm_divide_62m:auto_generated|                                                                                                ; 39 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ksa|shuffle_mem:U23|lpm_divide:Mod0|lpm_divide_62m:auto_generated                                                                                                                                                                                                                                                                              ; lpm_divide_62m                    ; work         ;
-;             |sign_div_unsign_9kh:divider|                                                                                               ; 39 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ksa|shuffle_mem:U23|lpm_divide:Mod0|lpm_divide_62m:auto_generated|sign_div_unsign_9kh:divider                                                                                                                                                                                                                                                  ; sign_div_unsign_9kh               ; work         ;
-;                |alt_u_div_ose:divider|                                                                                                  ; 39 (39)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ksa|shuffle_mem:U23|lpm_divide:Mod0|lpm_divide_62m:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_ose:divider                                                                                                                                                                                                                            ; alt_u_div_ose                     ; work         ;
-;    |shuffle_mem:U24|                                                                                                                    ; 91 (52)             ; 78 (78)                   ; 0                 ; 0          ; 0    ; 0            ; |ksa|shuffle_mem:U24                                                                                                                                                                                                                                                                                                                            ; shuffle_mem                       ; work         ;
-;       |lpm_divide:Mod0|                                                                                                                 ; 39 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ksa|shuffle_mem:U24|lpm_divide:Mod0                                                                                                                                                                                                                                                                                                            ; lpm_divide                        ; work         ;
-;          |lpm_divide_62m:auto_generated|                                                                                                ; 39 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ksa|shuffle_mem:U24|lpm_divide:Mod0|lpm_divide_62m:auto_generated                                                                                                                                                                                                                                                                              ; lpm_divide_62m                    ; work         ;
-;             |sign_div_unsign_9kh:divider|                                                                                               ; 39 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ksa|shuffle_mem:U24|lpm_divide:Mod0|lpm_divide_62m:auto_generated|sign_div_unsign_9kh:divider                                                                                                                                                                                                                                                  ; sign_div_unsign_9kh               ; work         ;
-;                |alt_u_div_ose:divider|                                                                                                  ; 39 (39)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ksa|shuffle_mem:U24|lpm_divide:Mod0|lpm_divide_62m:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_ose:divider                                                                                                                                                                                                                            ; alt_u_div_ose                     ; work         ;
-;    |shuffle_mem:U2|                                                                                                                     ; 91 (52)             ; 78 (78)                   ; 0                 ; 0          ; 0    ; 0            ; |ksa|shuffle_mem:U2                                                                                                                                                                                                                                                                                                                             ; shuffle_mem                       ; work         ;
-;       |lpm_divide:Mod0|                                                                                                                 ; 39 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ksa|shuffle_mem:U2|lpm_divide:Mod0                                                                                                                                                                                                                                                                                                             ; lpm_divide                        ; work         ;
-;          |lpm_divide_62m:auto_generated|                                                                                                ; 39 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ksa|shuffle_mem:U2|lpm_divide:Mod0|lpm_divide_62m:auto_generated                                                                                                                                                                                                                                                                               ; lpm_divide_62m                    ; work         ;
-;             |sign_div_unsign_9kh:divider|                                                                                               ; 39 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ksa|shuffle_mem:U2|lpm_divide:Mod0|lpm_divide_62m:auto_generated|sign_div_unsign_9kh:divider                                                                                                                                                                                                                                                   ; sign_div_unsign_9kh               ; work         ;
-;                |alt_u_div_ose:divider|                                                                                                  ; 39 (39)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ksa|shuffle_mem:U2|lpm_divide:Mod0|lpm_divide_62m:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_ose:divider                                                                                                                                                                                                                             ; alt_u_div_ose                     ; work         ;
+;    |shuffle_mem:U22|                                                                                                                    ; 94 (54)             ; 78 (78)                   ; 0                 ; 0          ; 0    ; 0            ; |ksa|shuffle_mem:U22                                                                                                                                                                                                                                                                                                                            ; shuffle_mem                       ; work         ;
+;       |lpm_divide:Mod0|                                                                                                                 ; 40 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ksa|shuffle_mem:U22|lpm_divide:Mod0                                                                                                                                                                                                                                                                                                            ; lpm_divide                        ; work         ;
+;          |lpm_divide_62m:auto_generated|                                                                                                ; 40 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ksa|shuffle_mem:U22|lpm_divide:Mod0|lpm_divide_62m:auto_generated                                                                                                                                                                                                                                                                              ; lpm_divide_62m                    ; work         ;
+;             |sign_div_unsign_9kh:divider|                                                                                               ; 40 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ksa|shuffle_mem:U22|lpm_divide:Mod0|lpm_divide_62m:auto_generated|sign_div_unsign_9kh:divider                                                                                                                                                                                                                                                  ; sign_div_unsign_9kh               ; work         ;
+;                |alt_u_div_ose:divider|                                                                                                  ; 40 (40)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ksa|shuffle_mem:U22|lpm_divide:Mod0|lpm_divide_62m:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_ose:divider                                                                                                                                                                                                                            ; alt_u_div_ose                     ; work         ;
+;    |shuffle_mem:U23|                                                                                                                    ; 94 (54)             ; 78 (78)                   ; 0                 ; 0          ; 0    ; 0            ; |ksa|shuffle_mem:U23                                                                                                                                                                                                                                                                                                                            ; shuffle_mem                       ; work         ;
+;       |lpm_divide:Mod0|                                                                                                                 ; 40 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ksa|shuffle_mem:U23|lpm_divide:Mod0                                                                                                                                                                                                                                                                                                            ; lpm_divide                        ; work         ;
+;          |lpm_divide_62m:auto_generated|                                                                                                ; 40 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ksa|shuffle_mem:U23|lpm_divide:Mod0|lpm_divide_62m:auto_generated                                                                                                                                                                                                                                                                              ; lpm_divide_62m                    ; work         ;
+;             |sign_div_unsign_9kh:divider|                                                                                               ; 40 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ksa|shuffle_mem:U23|lpm_divide:Mod0|lpm_divide_62m:auto_generated|sign_div_unsign_9kh:divider                                                                                                                                                                                                                                                  ; sign_div_unsign_9kh               ; work         ;
+;                |alt_u_div_ose:divider|                                                                                                  ; 40 (40)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ksa|shuffle_mem:U23|lpm_divide:Mod0|lpm_divide_62m:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_ose:divider                                                                                                                                                                                                                            ; alt_u_div_ose                     ; work         ;
+;    |shuffle_mem:U24|                                                                                                                    ; 94 (54)             ; 78 (78)                   ; 0                 ; 0          ; 0    ; 0            ; |ksa|shuffle_mem:U24                                                                                                                                                                                                                                                                                                                            ; shuffle_mem                       ; work         ;
+;       |lpm_divide:Mod0|                                                                                                                 ; 40 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ksa|shuffle_mem:U24|lpm_divide:Mod0                                                                                                                                                                                                                                                                                                            ; lpm_divide                        ; work         ;
+;          |lpm_divide_62m:auto_generated|                                                                                                ; 40 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ksa|shuffle_mem:U24|lpm_divide:Mod0|lpm_divide_62m:auto_generated                                                                                                                                                                                                                                                                              ; lpm_divide_62m                    ; work         ;
+;             |sign_div_unsign_9kh:divider|                                                                                               ; 40 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ksa|shuffle_mem:U24|lpm_divide:Mod0|lpm_divide_62m:auto_generated|sign_div_unsign_9kh:divider                                                                                                                                                                                                                                                  ; sign_div_unsign_9kh               ; work         ;
+;                |alt_u_div_ose:divider|                                                                                                  ; 40 (40)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ksa|shuffle_mem:U24|lpm_divide:Mod0|lpm_divide_62m:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_ose:divider                                                                                                                                                                                                                            ; alt_u_div_ose                     ; work         ;
+;    |shuffle_mem:U2|                                                                                                                     ; 94 (54)             ; 78 (78)                   ; 0                 ; 0          ; 0    ; 0            ; |ksa|shuffle_mem:U2                                                                                                                                                                                                                                                                                                                             ; shuffle_mem                       ; work         ;
+;       |lpm_divide:Mod0|                                                                                                                 ; 40 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ksa|shuffle_mem:U2|lpm_divide:Mod0                                                                                                                                                                                                                                                                                                             ; lpm_divide                        ; work         ;
+;          |lpm_divide_62m:auto_generated|                                                                                                ; 40 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ksa|shuffle_mem:U2|lpm_divide:Mod0|lpm_divide_62m:auto_generated                                                                                                                                                                                                                                                                               ; lpm_divide_62m                    ; work         ;
+;             |sign_div_unsign_9kh:divider|                                                                                               ; 40 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ksa|shuffle_mem:U2|lpm_divide:Mod0|lpm_divide_62m:auto_generated|sign_div_unsign_9kh:divider                                                                                                                                                                                                                                                   ; sign_div_unsign_9kh               ; work         ;
+;                |alt_u_div_ose:divider|                                                                                                  ; 40 (40)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ksa|shuffle_mem:U2|lpm_divide:Mod0|lpm_divide_62m:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_ose:divider                                                                                                                                                                                                                             ; alt_u_div_ose                     ; work         ;
 ;    |sld_hub:auto_hub|                                                                                                                   ; 233 (1)             ; 290 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |ksa|sld_hub:auto_hub                                                                                                                                                                                                                                                                                                                           ; sld_hub                           ; altera_sld   ;
 ;       |alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric| ; 232 (0)             ; 290 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |ksa|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric                                                                                                                                                                                           ; alt_sld_fab_with_jtag_input       ; altera_sld   ;
 ;          |alt_sld_fab:instrumentation_fabric|                                                                                           ; 232 (0)             ; 290 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |ksa|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric                                                                                                                                                        ; alt_sld_fab                       ; alt_sld_fab  ;
@@ -553,8 +553,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
 ; Total registers                              ; 1690  ;
-; Number of registers using Synchronous Clear  ; 806   ;
-; Number of registers using Synchronous Load   ; 449   ;
+; Number of registers using Synchronous Clear  ; 826   ;
+; Number of registers using Synchronous Load   ; 419   ;
 ; Number of registers using Asynchronous Clear ; 435   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 1524  ;
@@ -586,8 +586,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                                                                       ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |ksa|increment_key:U74|count_key[1]                                                                                                                                              ;
-; 3:1                ; 18 bits   ; 36 LEs        ; 18 LEs               ; 18 LEs                 ; Yes        ; |ksa|increment_key:U74|count_key[8]                                                                                                                                              ;
+; 3:1                ; 20 bits   ; 40 LEs        ; 0 LEs                ; 40 LEs                 ; Yes        ; |ksa|increment_key:U74|count_key[1]                                                                                                                                              ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |ksa|increment_key:U74|count_key[21]                                                                                                                                             ;
 ; 3:1                ; 21 bits   ; 42 LEs        ; 0 LEs                ; 42 LEs                 ; Yes        ; |ksa|increment_key:U73|count_key[20]                                                                                                                                             ;
 ; 3:1                ; 21 bits   ; 42 LEs        ; 0 LEs                ; 42 LEs                 ; Yes        ; |ksa|increment_key:U72|count_key[16]                                                                                                                                             ;
 ; 3:1                ; 22 bits   ; 44 LEs        ; 0 LEs                ; 44 LEs                 ; Yes        ; |ksa|increment_key:U7|count_key[14]                                                                                                                                              ;
@@ -1844,15 +1844,15 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------------------+-------------------------------------------------+
 
 
-+-------------------------------------------------+
-; Port Connectivity Checks: "increment_key:U74"   ;
-+---------------+-------+----------+--------------+
-; Port          ; Type  ; Severity ; Details      ;
-+---------------+-------+----------+--------------+
-; setter        ; Input ; Info     ; Stuck at VCC ;
-; number[21..4] ; Input ; Info     ; Stuck at VCC ;
-; number[3..0]  ; Input ; Info     ; Stuck at GND ;
-+---------------+-------+----------+--------------+
++--------------------------------------------------+
+; Port Connectivity Checks: "increment_key:U74"    ;
++----------------+-------+----------+--------------+
+; Port           ; Type  ; Severity ; Details      ;
++----------------+-------+----------+--------------+
+; setter         ; Input ; Info     ; Stuck at VCC ;
+; number[21..20] ; Input ; Info     ; Stuck at VCC ;
+; number[19..0]  ; Input ; Info     ; Stuck at GND ;
++----------------+-------+----------+--------------+
 
 
 +----------------------------------------------------------------------------------------------------------------+
@@ -2031,39 +2031,39 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; arriav_ff             ; 1400                        ;
 ;     CLR               ; 60                          ;
-;     ENA               ; 212                         ;
+;     ENA               ; 214                         ;
 ;     ENA CLR           ; 108                         ;
 ;     ENA CLR SLD       ; 32                          ;
-;     ENA SCLR          ; 692                         ;
+;     ENA SCLR          ; 712                         ;
 ;     ENA SCLR SLD      ; 96                          ;
-;     ENA SLD           ; 118                         ;
+;     ENA SLD           ; 96                          ;
 ;     SCLR              ; 4                           ;
-;     SLD               ; 10                          ;
-;     plain             ; 68                          ;
-; arriav_lcell_comb     ; 1571                        ;
+;     SLD               ; 2                           ;
+;     plain             ; 76                          ;
+; arriav_lcell_comb     ; 1585                        ;
 ;     arith             ; 388                         ;
 ;         0 data inputs ; 28                          ;
 ;         1 data inputs ; 248                         ;
 ;         2 data inputs ; 64                          ;
 ;         3 data inputs ; 28                          ;
 ;         4 data inputs ; 20                          ;
-;     extend            ; 24                          ;
-;         7 data inputs ; 24                          ;
-;     normal            ; 1127                        ;
+;     extend            ; 16                          ;
+;         7 data inputs ; 16                          ;
+;     normal            ; 1149                        ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 6                           ;
-;         2 data inputs ; 144                         ;
-;         3 data inputs ; 117                         ;
-;         4 data inputs ; 225                         ;
-;         5 data inputs ; 352                         ;
-;         6 data inputs ; 282                         ;
+;         2 data inputs ; 130                         ;
+;         3 data inputs ; 125                         ;
+;         4 data inputs ; 245                         ;
+;         5 data inputs ; 368                         ;
+;         6 data inputs ; 274                         ;
 ;     shared            ; 32                          ;
 ;         3 data inputs ; 32                          ;
 ; boundary_port         ; 391                         ;
 ; stratixv_ram_block    ; 96                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 10.40                       ;
-; Average LUT depth     ; 2.06                        ;
+; Average LUT depth     ; 2.10                        ;
 +-----------------------+-----------------------------+
 
 
@@ -2072,7 +2072,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:03     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -2082,7 +2082,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.1.2 Build 203 01/18/2017 SJ Lite Edition
-    Info: Processing started: Tue Aug 25 01:19:57 2026
+    Info: Processing started: Tue Aug 25 01:37:39 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off rc4 -c rc4
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
@@ -2374,7 +2374,7 @@ Warning (12125): Using design file sevensegmentdisplaydecoder.sv, which is not s
     Info (12023): Found entity 1: SevenSegmentDisplayDecoder File: C:/Users/2005B/OneDrive/Desktop/Courses/CPEN 311/Labs/Lab4/template_de1soc/sevensegmentdisplaydecoder.sv Line: 1
 Info (12128): Elaborating entity "SevenSegmentDisplayDecoder" for hierarchy "SevenSegmentDisplayDecoder:ssHEX0" File: C:/Users/2005B/OneDrive/Desktop/Courses/CPEN 311/Labs/Lab4/template_de1soc/ksa.sv Line: 446
 Info (11170): Starting IP generation for the debug fabric: alt_sld_fab.
-Info (11172): 2026.08.25.01:20:08 Progress: Loading sld73f98f60/alt_sld_fab_wrapper_hw.tcl
+Info (11172): 2026.08.25.01:37:48 Progress: Loading sld73f98f60/alt_sld_fab_wrapper_hw.tcl
 Info (11172): Alt_sld_fab.alt_sld_fab: SLD fabric agents which did not specify prefer_host were connected to JTAG
 Info (11172): Alt_sld_fab: Generating alt_sld_fab "alt_sld_fab" for QUARTUS_SYNTH
 Info (11172): Alt_sld_fab: "alt_sld_fab" instantiated alt_sld_fab "alt_sld_fab"
@@ -2421,18 +2421,18 @@ Info (286031): Timing-Driven Synthesis is running on partition "Top"
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 9 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (15752): Ignored 12 Virtual Pin logic option assignments
-    Warning (15751): Ignored Virtual Pin assignment to "LCD_DATA[0]".
-    Warning (15751): Ignored Virtual Pin assignment to "LCD_DATA[2]".
-    Warning (15751): Ignored Virtual Pin assignment to "LCD_ON".
     Warning (15751): Ignored Virtual Pin assignment to "LCD_DATA[5]".
-    Warning (15751): Ignored Virtual Pin assignment to "LCD_RW".
-    Warning (15751): Ignored Virtual Pin assignment to "LCD_DATA[6]".
-    Warning (15751): Ignored Virtual Pin assignment to "LCD_DATA[7]".
-    Warning (15751): Ignored Virtual Pin assignment to "LCD_DATA[1]".
-    Warning (15751): Ignored Virtual Pin assignment to "LCD_DATA[3]".
-    Warning (15751): Ignored Virtual Pin assignment to "LCD_DATA[4]".
     Warning (15751): Ignored Virtual Pin assignment to "LCD_RS".
     Warning (15751): Ignored Virtual Pin assignment to "LCD_EN".
+    Warning (15751): Ignored Virtual Pin assignment to "LCD_DATA[2]".
+    Warning (15751): Ignored Virtual Pin assignment to "LCD_DATA[3]".
+    Warning (15751): Ignored Virtual Pin assignment to "LCD_DATA[1]".
+    Warning (15751): Ignored Virtual Pin assignment to "LCD_DATA[7]".
+    Warning (15751): Ignored Virtual Pin assignment to "LCD_ON".
+    Warning (15751): Ignored Virtual Pin assignment to "LCD_DATA[4]".
+    Warning (15751): Ignored Virtual Pin assignment to "LCD_DATA[6]".
+    Warning (15751): Ignored Virtual Pin assignment to "LCD_RW".
+    Warning (15751): Ignored Virtual Pin assignment to "LCD_DATA[0]".
 Warning (21074): Design contains 13 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "KEY[0]" File: C:/Users/2005B/OneDrive/Desktop/Courses/CPEN 311/Labs/Lab4/template_de1soc/ksa.sv Line: 3
     Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/2005B/OneDrive/Desktop/Courses/CPEN 311/Labs/Lab4/template_de1soc/ksa.sv Line: 3
@@ -2447,15 +2447,15 @@ Warning (21074): Design contains 13 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "SW[7]" File: C:/Users/2005B/OneDrive/Desktop/Courses/CPEN 311/Labs/Lab4/template_de1soc/ksa.sv Line: 4
     Warning (15610): No output dependent on input pin "SW[8]" File: C:/Users/2005B/OneDrive/Desktop/Courses/CPEN 311/Labs/Lab4/template_de1soc/ksa.sv Line: 4
     Warning (15610): No output dependent on input pin "SW[9]" File: C:/Users/2005B/OneDrive/Desktop/Courses/CPEN 311/Labs/Lab4/template_de1soc/ksa.sv Line: 4
-Info (21057): Implemented 2849 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 2863 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 18 input pins
     Info (21059): Implemented 53 output pins
-    Info (21061): Implemented 2681 logic cells
+    Info (21061): Implemented 2695 logic cells
     Info (21064): Implemented 96 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 46 warnings
-    Info: Peak virtual memory: 4978 megabytes
-    Info: Processing ended: Tue Aug 25 01:20:22 2026
-    Info: Elapsed time: 00:00:25
-    Info: Total CPU time (on all processors): 00:00:39
+    Info: Peak virtual memory: 4979 megabytes
+    Info: Processing ended: Tue Aug 25 01:37:58 2026
+    Info: Elapsed time: 00:00:19
+    Info: Total CPU time (on all processors): 00:00:32
 
 
