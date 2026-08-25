@@ -1,0 +1,42 @@
+`define IDLE 2'b00
+`define INITIALIZE 2'b01
+`define COMPLETED 2'b10
+
+module init_s_mem(
+    input clk,
+    output reg [7:0] addr,
+    output reg [7:0] data,
+    output reg wren,
+    output reg finished
+);
+
+    reg [7:0] count = 0;
+    reg [1:0] state = `IDLE;
+
+    always_ff @(posedge clk) begin
+        case(state) 
+            `IDLE: state <= `INITIALIZE;
+
+            `INITIALIZE: begin
+                if (count == 8'hFF) begin
+                    wren <= 1;
+                    addr <= count;
+                    data <= count;
+                    state <= `COMPLETED;
+                end else begin
+                    wren <= 1;
+                    addr <= count;
+                    data <= count;
+                    count <= count + 1;
+                end
+            end
+
+            `COMPLETED: begin
+                count <= 0;
+                finished <= 1;
+                wren <= 0;
+            end
+        endcase
+    end
+
+endmodule
