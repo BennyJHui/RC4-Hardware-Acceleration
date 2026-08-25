@@ -1,0 +1,46 @@
+module ksa(
+    input CLOCK_50,
+    input [3:0] KEY,
+    input [9:0] SW,
+    output [9:0] LEDR,
+    output [6:0] HEX0,
+    output [6:0] HEX1,
+    output [6:0] HEX2,
+    output [6:0] HEX3,
+    output [6:0] HEX4,
+    output [6:0] HEX5
+);
+
+    wire [7:0] s_addr;
+    wire [7:0] s_data;
+    wire [7:0] s_q;
+    wire s_wren;
+    wire s_finish;
+
+    init_s_mem U_INIT(
+        .clk(CLOCK_50),
+        .addr(s_addr),
+        .data(s_data),
+        .wren(s_wren),
+        .finished(s_finish)
+    );
+
+    s_memory U_S_MEMORY(
+        .address(s_addr),
+        .clock(CLOCK_50),
+        .data(s_data),
+        .wren(s_wren),
+        .q(s_q)
+    );
+
+    assign LEDR[0] = s_finish;
+    assign LEDR[9:1] = 9'b0;
+
+    assign HEX0 = 7'b1111111;
+    assign HEX1 = 7'b1111111;
+    assign HEX2 = 7'b1111111;
+    assign HEX3 = 7'b1111111;
+    assign HEX4 = 7'b1111111;
+    assign HEX5 = 7'b1111111;
+
+endmodule
